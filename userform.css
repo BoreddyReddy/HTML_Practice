@@ -1,0 +1,46 @@
+body{
+    background-color: #ddd;
+}
+
+.d1{
+    margin-bottom: 10px;
+}
+
+.usr{
+    height: 25px;
+    width: 200px;
+    border: 2px solid rgb(33, 121, 216);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.pwd{
+    height: 25px;
+    width: 200px;
+    border: 2px solid rgb(33, 121, 216);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.btn_div{
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 100px;
+
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(7, 105, 105);
+    color:white;
+}
+
+#loging_form{
+    margin: auto;
+    margin-top: 200px;
+    max-width: 400px;
+    border: 1px solid #04551a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 3px rgba(197, 10, 169, 0.877);
+    text-align: center;
+}
