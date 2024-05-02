@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            margin:auto;
+            padding: 0;
+        }
+        .container{
+            border: 1px solid black;
+            height: auto;
+            width: 100%;
+        
+        }
+        .nav-bar{
+            position: relative;
+            overflow: hidden;
+            background-color: rgb(188, 231, 217);
+        }
+        .nav-bar-items{
+            list-style: none;
+        }
+        .nav-bar-items li{
+            display: inline;
+            padding: 25px;
+        }
+        .nav-bar .Hdr{
+            float: left;
+            width: 20%;
+        }
+        .nav-bar .items{
+            float: right;
+            width: 78%;
+        }
+        .content{
+            position: relative;
+            overflow: hidden;
+            padding-left: 20px;
+            font-style:italic;
+            font-family: cursive;
+        }
+        .para1{
+            width: 400px;
+            float: left;
+            clear: both;
+        }
+        .Fee_Form{
+            float: left;
+            width: 500px;
+            height: auto;
+            margin-top: -60px;
+            margin-right: 20px;
+            padding-left: 35px;
+        }
+        .lrn-more{
+            margin-top: 40px;
+
+        }
+        .btn{
+            height: 30px;
+            width: 90px;
+            border-radius: 20px;
+            background-color: rgb(12, 12, 100);
+            color: white;
+        }
+        .Hdr h4{
+            margin: 15px 0 0 0;
+            padding-left: 30px;
+            color: rgb(12, 197, 197);
+        }
+        .jnc{
+            border: 2px solid black;
+            padding: 2px;
+            border-radius: 10px;
+            font-size: smaller;
+            background-color:rgb(12, 197, 197);;
+        }
+        .box{
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+            padding: 0 0 35px 35px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: rgba(60, 185, 48, 0.918);
+
+        }
+        .box input {
+            width: 200px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        .gallery{
+            display: flex;
+            width:1000px;
+            flex-wrap: wrap;
+            margin-left: 150px;
+            padding-left: 40px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .footer{
+            height: 40px;
+            width: 825px;
+            background-color: blue;
+            color: white;
+            margin-left: 200px;
+            padding-left: 40px;
+            text-align: center;
+            padding-top:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="Hdr">
+                <h4>React Developer</h4>
+            </div>
+            <div class="items">
+                <ul class="nav-bar-items">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./sampletest.html">about</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./Gallery.html">Gallery</a></li>
+                    <li><a class="jnc" href="">Join Class</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="gallery">
+                <img src="./Images/image1.jpg" alt="alt image text">
+                <img src="./Images/image2.jpg" alt="alt image text">
+                <img src="./Images/image3.jpg" alt="alt image text">
+                <img src="./Images/image4.jpg" alt="alt image text">
+                <img src="./Images/image5.jpg" alt="alt image text">
+                <img src="./Images/image6.jpg" alt="alt image text">
+                <img src="./Images/image4.jpg" alt="alt image text">
+                <img src="./Images/image5.jpg" alt="alt image text">
+                <img src="./Images/image6.jpg" alt="alt image text">
+                <img src="./Images/image4.jpg" alt="alt image text">
+                <img src="./Images/image5.jpg" alt="alt image text">
+                <img src="./Images/image6.jpg" alt="alt image text">
+            </div>
+            <div class="footer">
+Get to know us better!
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
