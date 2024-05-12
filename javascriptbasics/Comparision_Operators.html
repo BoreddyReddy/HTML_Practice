@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComparisionOperators</title>
+  </head>
+  <body>
+    <!-- = - it is used for assigning the values to variable
+    ==  -- It is use for comparing the values between 2 variables
+    ===  -- if datatypes and values are equal then it will return true else false
+    !=
+    <
+    >
+    <=
+    >= 
+    ?
+-->
+
+    <!-- Number
+String
+null
+undefined
+boolean -->
+
+    <script>
+      var number1 = 10;
+      var number2 = 17;
+
+      //document.write(typeof number2);
+
+      // Equal operator
+      //-------------------------
+      /* if (number1 == number2) {
+        document.write("<br> Both are equal ");
+      } else {
+        document.write(" Both are not equal ");
+      } */
+
+      // triple Equal operator
+      //-------------------------
+      /*
+      if (number1 === number2) {
+        document.write("<br> Both are equal ");
+      } else {
+        document.write(" Both are not equal ");
+      } */
+
+      // Not Equal operator
+      //-------------------------
+      /* if (number1 != number2) {
+        document.write("Condition is satisfied ");
+      } else {
+        document.write(" Condition is not satisfied ");
+      } */
+
+      // Lessthan operator
+      //-------------------------
+
+      /*if (number1 < number2) {
+        document.write("<br>" + number1 + " is lessthan " + number2);
+      } else {
+        document.write("<br>" + number1 + " is greaterthan " + number2);
+      } */
+
+      // greaterthan operator
+      //-------------------------
+
+      /* if (number1 > number2) {
+        document.write("<br>" + number1 + " is greaterthan " + number2);
+      } else {
+        document.write("<br>" + number1 + " is lessthan " + number2);
+      } */
+
+      // Lessthan equal operator
+      //-------------------------
+
+      /* if (number1 <= number2) {
+        document.write("");
+      } 
+      else {
+        document.write("");
+      }  */
+
+      // greatertha equal operator
+      //-------------------------
+
+      /* if (number1 >= number2) {
+        document.write(number1 + " >= " + number2);
+        document.write("<br>satisfy");
+      }
+       else {
+        document.write(number1 + " >= " + number2);
+        document.write("<br> not satsfy");
+      } 
+      */
+
+      // ternery operator (?)
+      //-------------------------
+
+      /* var ternary = number1 >= number2 ? "Satisfied" : "Not Satisfied";
+
+      document.write(ternary); */
+
+      let score = "40";
+      let grade =
+        score < 50
+          ? "F"
+          : score < 70
+          ? "D"
+          : score < 80
+          ? "C"
+          : score < 90
+          ? "B"
+          : "A";
+
+      document.write(grade);
+    </script>
+  </body>
+</html>

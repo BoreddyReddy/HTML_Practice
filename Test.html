@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .content_table {
-            border-collapse: collapse;
-            width: 50%;
-            box-sizing: border-box;
-            border-radius: 8px 8px 0 0;
-            overflow: hidden;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 15px;
-        }
-        th {
-            background-color: #2a7303;
-        }
-
+      .content_table {
+        border-collapse: collapse;
+        width: 50%;
+        box-sizing: border-box;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+      }
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 15px;
+      }
+      th {
+        background-color: #2a7303;
+      }
+      .videos {
+        box-sizing: border-box;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+      }
+      video {
+        margin: 0 0 5px 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 3px 3px 20px 3px #c9c7c7;
+      }
     </style>
-</head>
-<body>
-    <div style="margin-top:35px;">
-        <table class="content_table">
-            <thead>
-                <tr>
-                    <th>StudentName</th>
-                    <th>Group</th>
-                    <th>College</th>
-                    <th>Location</th>
-                    <th>University</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Sankar </td>
-                    <td>CSE</td>
-                    <td>PDIT</td>
-                    <td>Tirupathi</td>
-                    <td>JNTU</td>
-                </tr>
-                <tr>
-                    <td>Harinadh Reddy</td>
-                    <td>ECE</td>
-                    <td>SVCE</td>
-                    <td>Tirupathi</td>
-                    <td>SVU</td>
-                </tr>
-                <tr>
-                    <td>Siva Kesava Reddy</td>
-                    <td>LKG</td>
-                    <td>TBPS</td>
-                    <td>Bangalore</td>
-                    <td>TBPS</td>
-                </tr>
-            </tbody>
-        </table>
+    <script src="./MyPractice/loops.js"></script>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="videos" style="margin: 20px 0 0 60px; display: flex">
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+          muted
+        ></video>
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+        ></video>
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+        ></video>
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+        ></video>
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+        ></video>
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+        ></video>
+        <video
+          src="./videos/marriageInvitation.mpeg"
+          width="300px"
+          height="300px"
+          controls
+        ></video>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
