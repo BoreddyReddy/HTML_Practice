@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <!-- &&  a=b && b=c
+||       a=b || b=c
+!    !a=b || b=c
+-->
+
+    <!-- 90 -100 You passed in A grade 60 -89 You passed in B grade 40 - 59 You
+    passed in C grade you failed better luck next time -->
+
+    <script>
+      // && Operator
+      //-----------------
+
+      /* let StudentName = prompt("Enter Name");
+      let Marks = prompt("Enter Marks");
+
+      if (Marks > 90 && Marks <= 100) {
+        document.write("You passed in Grade A");
+      } else if (Marks > 60 && Marks <= 89) {
+        document.write("You passed in Grade B");
+      } else if (Marks > 40 && Marks <= 59) {
+        document.write("You passed in Grade C");
+      } else {
+        document.write("You failed better luck next time");
+      } */
+
+      // || Operator
+      //-----------------
+      /*
+      let a = 10;
+      let b = 20;
+      let C = 20; 
+
+      if (a > b || b < C) {
+        document.write("a number is greater than B OR B is Lessthan C ");
+      } else {
+        document.write("<br>The above conditions are not satisfied ");
+      } */
+
+      /* if (!a > b || b < C) {
+        document.write("a number is greater than B OR B is Lessthan C ");
+      } else {
+        document.write("The above conditions are not satisfied ");
+      } */ C;
+
+      // Using ternery operator
+
+      /* let StudentName = prompt("Enter Name");
+      let Marks = prompt("Enter Marks");
+
+      let results =
+        Marks > 90 && Marks <= 100
+          ? "You passed in Grade A"
+          : Marks > 60 && Marks <= 89
+          ? "You passed in Grade B"
+          : Marks > 40 && Marks <= 59
+          ? "You passed in Grade C"
+          : "You are failed betterluck next time";
+
+      document.write(results); */
+
+      /* let a = 10;
+      let b = 20;
+      let C = 20;
+
+      a > b || b < C ? "Condition is satisfied" : "Not satisfied"; */
+
+      let StudentName = prompt("Enter Name");
+      let Marks = prompt("Enter Marks");
+      let result;
+
+      switch (true) {
+        case Marks > 90 && Marks <= 100:
+          return (result = "You passed in Gread A");
+          break;
+        case Marks > 60 && Marks <= 89:
+          return (result = "You passed in Gread B");
+          break;
+        case Marks > 40 && Marks <= 59:
+          return (result = "You passed in Gread C");
+          break;
+
+        default:
+          return (result = "You failed in exam betterluck next time");
+      }
+
+      document.write(result);
+    </script>
+  </body>
+</html>
