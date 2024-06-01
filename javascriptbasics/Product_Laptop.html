@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Inventory</title>
+    <style>
+      input[type="text"] {
+        width: 300px;
+        height: 30px;
+      }
+      #inventry_form div {
+        margin-bottom: 20px;
+      }
+      #inventry_form label{
+        margin-right: 20px;
+      }
+      #inventry_form button{
+        width: 200px;
+        padding: 10px;
+        background-color: rgb(114, 113, 113);
+        color: #ffff;
+        font-size: x-large;
+        cursor: pointer;
+      }
+      table{
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td,th{
+        border: 2px solid black;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="inventry_form" onsubmit="form_submit()">
+      <center>
+        <div>
+          <label>Brand Name</label><input type="text" name="name" id="name" />
+        </label>Model</label><input
+            type="text"
+            name="model"
+            id="model"
+          />
+        </div>
+        <div>
+            <label>Generation</label><input type="text" name="gen" id="gen" />
+            <label>Ram</label><input
+            type="text"
+            name="ram"
+            id="ram"
+          />
+        </div>
+        <div>
+            <label>Processor</label>
+         <input
+            type="text"
+            name="proc"
+            id="proc"
+          />
+          <label>HardDisk</label><input type="text" name="hd" id="hd" />
+        </div>
+        <div>
+            <label>OperatingSystem</label><input
+            type="text"
+            name="os"
+            id="os"
+          />
+          <label>GraphicCard</label><input type="text" name="Gc" id="Gc" />
+        </div>
+        <div><button type="submit">Save</button></div>
+      </center>
+    </form>
+    <table>
+        <thead>
+            <th>BrandName</th>
+            <th>Model</th>
+            <th>Generation</th>
+            <th>Ram</th>
+            <th>Processor</th>
+            <th>HardDisck</th>
+            <th>OperationSystem</th>
+            <th>GraphiCard</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+
+        function form_submit(){
+            event.preventDefault();
+            let data=Read_Data()
+            data_bind(data)
+        }
+
+        function Read_Data(){
+            
+            let formData={}
+            formData['BrandName']=document.getElementById('name').value;
+            formData['Model']=document.getElementById('model').value;
+            formData['Generation']=document.getElementById('gen').value;
+            formData['Ram']=document.getElementById('ram').value;
+            formData['Processor']=document.getElementById('proc').value;
+            formData['HardDisk']=document.getElementById('hd').value;
+            formData['OperatingSystem']=document.getElementById('os').value;
+            formData['GraphicCard']=document.getElementById('Gc').value;
+
+            return formData;
+        }
+        function data_bind(data){
+            let tb=document.getElementsByTagName('tbody')[0]
+            let row=tb.insertRow(tb.length)
+
+            cell1=row.insertCell(0)
+            cell1.innerHTML=data.BrandName
+            cell2=row.insertCell(1)
+            cell2.innerHTML=data.Model
+            cell3=row.insertCell(2)
+            cell3.innerHTML=data.Generation
+            cell4=row.insertCell(3)
+            cell4.innerHTML=data.Ram
+            cell5=row.insertCell(4)
+            cell5.innerHTML=data.Processor
+            cell6=row.insertCell(5)
+            cell6.innerHTML=data.HardDisk
+            cell7=row.insertCell(6)
+            cell7.innerHTML=data.OperatingSystem
+            cell8=row.insertCell(7)
+            cell8.innerHTML=data.GraphicCard
+        }
+    </script>
+  </body>
+</html>
